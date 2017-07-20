@@ -10,12 +10,9 @@
 原文地址【我是链接搬运工】http://ryanipete.com/blog/ios/swift/objective-c/uidebugginginformationoverlay/
 
 使用tips：
+1.在程序初始化时调用，一般在AppDelegate中：
 
-在程序初始化时调用，一般在AppDelegate中：
-
-
-
-12Class debugCls = NSClass">
+12Class debugCls = NSClassF">
 <meta property="og:type" content="article">
 <meta property="og:title" content="UIDebuggingInformationOverlay调试工具">
 <meta property="og:url" content="http://yoursite.com/2017/07/20/UIDebuggingInformationOverlay调试工具/index.html">
@@ -25,14 +22,11 @@
 原文地址【我是链接搬运工】http://ryanipete.com/blog/ios/swift/objective-c/uidebugginginformationoverlay/
 
 使用tips：
+1.在程序初始化时调用，一般在AppDelegate中：
 
-在程序初始化时调用，一般在AppDelegate中：
-
-
-
-12Class debugCls = NSClass">
+12Class debugCls = NSClassF">
 <meta property="og:image" content="http://i1.buimg.com/1949/67c93101eb4a27cb.png">
-<meta property="og:updated_time" content="2017-07-20T03:03:52.000Z">
+<meta property="og:updated_time" content="2017-07-20T03:05:35.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="UIDebuggingInformationOverlay调试工具">
 <meta name="twitter:description" content="iOS自带调试悬浮窗：UIDebuggingInformationOverlay
@@ -40,12 +34,9 @@
 原文地址【我是链接搬运工】http://ryanipete.com/blog/ios/swift/objective-c/uidebugginginformationoverlay/
 
 使用tips：
+1.在程序初始化时调用，一般在AppDelegate中：
 
-在程序初始化时调用，一般在AppDelegate中：
-
-
-
-12Class debugCls = NSClass">
+12Class debugCls = NSClassF">
   
     <link rel="alternative" href="/atom.xml" title="ryokaa77" type="application/atom+xml">
   
@@ -264,10 +255,7 @@
 <li>原文地址【我是链接搬运工】<br><a href="http://ryanipete.com/blog/ios/swift/objective-c/uidebugginginformationoverlay/" target="_blank" rel="external">http://ryanipete.com/blog/ios/swift/objective-c/uidebugginginformationoverlay/</a></li>
 </ul>
 <h3 id="使用tips：">使用tips：</h3><ul>
-<li><ol>
-<li>在程序初始化时调用，一般在AppDelegate中：</li>
-</ol>
-</li>
+<li>1.在程序初始化时调用，一般在AppDelegate中：</li>
 </ul>
 <figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Class debugCls = <span class="built_in">NSClassFromString</span>(<span class="string">@"UIDebuggingInformationOverlay"</span>);</span><br><span class="line">[debugCls performSelector:<span class="built_in">NSSelectorFromString</span>(<span class="string">@"prepareDebuggingOverlay"</span>)];</span><br></pre></td></tr></table></figure>
 <ul>
