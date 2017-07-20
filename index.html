@@ -196,6 +196,74 @@
 </nav>
       <div class="body-wrap">
   
+    <article id="post-UIDebuggingInformationOverlay调试工具" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2017/07/20/UIDebuggingInformationOverlay调试工具/" class="article-date">
+  	<time datetime="2017-07-20T02:38:35.000Z" itemprop="datePublished">2017-07-20</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/07/20/UIDebuggingInformationOverlay调试工具/">UIDebuggingInformationOverlay调试工具</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="iOS自带调试悬浮窗：UIDebuggingInformationOverlay">iOS自带调试悬浮窗：UIDebuggingInformationOverlay</h3><p><img src="http://i1.buimg.com/1949/67c93101eb4a27cb.png" alt="Markdown"></p>
+<ul>
+<li>原文地址【我是链接搬运工】<br><a href="http://ryanipete.com/blog/ios/swift/objective-c/uidebugginginformationoverlay/" target="_blank" rel="external">http://ryanipete.com/blog/ios/swift/objective-c/uidebugginginformationoverlay/</a></li>
+</ul>
+<h3 id="使用tips：">使用tips：</h3><ul>
+<li><ol>
+<li>在程序初始化时调用，一般在AppDelegate中：</li>
+</ol>
+</li>
+</ul>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Class debugCls = <span class="built_in">NSClassFromString</span>(<span class="string">@"UIDebuggingInformationOverlay"</span>);</span><br><span class="line">[debugCls performSelector:<span class="built_in">NSSelectorFromString</span>(<span class="string">@"prepareDebuggingOverlay"</span>)];</span><br></pre></td></tr></table></figure>
+<ul>
+<li>2.在要显示调试窗口的地方调用：</li>
+</ul>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Class someClass = <span class="built_in">NSClassFromString</span>(<span class="string">@"UIDebuggingInformationOverlay"</span>);</span><br><span class="line"><span class="keyword">id</span> obj = [someClass performSelector:<span class="built_in">NSSelectorFromString</span>(<span class="string">@"overlay"</span>)];</span><br><span class="line">[obj performSelector:<span class="built_in">NSSelectorFromString</span>(<span class="string">@"toggleVisibility"</span>)];</span><br></pre></td></tr></table></figure>
+<ul>
+<li>3.在调试的界面，两手点击status地方即可</li>
+</ul>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+  
     <article id="post-iOS9新特性" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">

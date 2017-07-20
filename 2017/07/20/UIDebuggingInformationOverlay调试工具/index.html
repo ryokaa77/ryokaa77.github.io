@@ -3,17 +3,49 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Archives | ryokaa77</title>
+  <title>UIDebuggingInformationOverlay调试工具 | ryokaa77</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="ryokaa77">
-<meta property="og:url" content="http://yoursite.com/archives/index.html">
+  <meta name="description" content="iOS自带调试悬浮窗：UIDebuggingInformationOverlay
+
+原文地址【我是链接搬运工】http://ryanipete.com/blog/ios/swift/objective-c/uidebugginginformationoverlay/
+
+使用tips：
+
+在程序初始化时调用，一般在AppDelegate中：
+
+
+
+12Class debugCls = NSClass">
+<meta property="og:type" content="article">
+<meta property="og:title" content="UIDebuggingInformationOverlay调试工具">
+<meta property="og:url" content="http://yoursite.com/2017/07/20/UIDebuggingInformationOverlay调试工具/index.html">
 <meta property="og:site_name" content="ryokaa77">
-<meta property="og:description">
+<meta property="og:description" content="iOS自带调试悬浮窗：UIDebuggingInformationOverlay
+
+原文地址【我是链接搬运工】http://ryanipete.com/blog/ios/swift/objective-c/uidebugginginformationoverlay/
+
+使用tips：
+
+在程序初始化时调用，一般在AppDelegate中：
+
+
+
+12Class debugCls = NSClass">
+<meta property="og:image" content="http://i1.buimg.com/1949/67c93101eb4a27cb.png">
+<meta property="og:updated_time" content="2017-07-20T03:03:52.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="ryokaa77">
-<meta name="twitter:description">
+<meta name="twitter:title" content="UIDebuggingInformationOverlay调试工具">
+<meta name="twitter:description" content="iOS自带调试悬浮窗：UIDebuggingInformationOverlay
+
+原文地址【我是链接搬运工】http://ryanipete.com/blog/ios/swift/objective-c/uidebugginginformationoverlay/
+
+使用tips：
+
+在程序初始化时调用，一般在AppDelegate中：
+
+
+
+12Class debugCls = NSClass">
   
     <link rel="alternative" href="/atom.xml" title="ryokaa77" type="application/atom+xml">
   
@@ -194,113 +226,116 @@
 		</header>				
 	</div>
 </nav>
-      <div class="body-wrap">
+      <div class="body-wrap"><article id="post-UIDebuggingInformationOverlay调试工具" class="article article-type-post" itemscope itemprop="blogPost">
   
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/07/20/UIDebuggingInformationOverlay调试工具/" class="archive-article-date">
-  	<time datetime="2017-07-20T02:38:35.000Z" itemprop="datePublished">Jul 20</time>
+    <div class="article-meta">
+      <a href="/2017/07/20/UIDebuggingInformationOverlay调试工具/" class="article-date">
+  	<time datetime="2017-07-20T02:38:35.000Z" itemprop="datePublished">2017-07-20</time>
 </a>
-        </div>
-    	 
+    </div>
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/07/20/UIDebuggingInformationOverlay调试工具/">UIDebuggingInformationOverlay调试工具</a>
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      UIDebuggingInformationOverlay调试工具
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
+      </header>
       
-        </div></section>
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2015" class="archive-year">2015</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2015/11/23/iOS9新特性/" class="archive-article-date">
-  	<time datetime="2015-11-23T15:14:05.000Z" itemprop="datePublished">Nov 23</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/11/23/iOS9新特性/">iOS9新特性</a>
-    </h1>
-  
+      <div class="article-info article-info-post">
+        
+        
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
         <div class="clearfix"></div>
-    </header>
+      </div>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="iOS自带调试悬浮窗：UIDebuggingInformationOverlay">iOS自带调试悬浮窗：UIDebuggingInformationOverlay</h3><p><img src="http://i1.buimg.com/1949/67c93101eb4a27cb.png" alt="Markdown"></p>
+<ul>
+<li>原文地址【我是链接搬运工】<br><a href="http://ryanipete.com/blog/ios/swift/objective-c/uidebugginginformationoverlay/" target="_blank" rel="external">http://ryanipete.com/blog/ios/swift/objective-c/uidebugginginformationoverlay/</a></li>
+</ul>
+<h3 id="使用tips：">使用tips：</h3><ul>
+<li><ol>
+<li>在程序初始化时调用，一般在AppDelegate中：</li>
+</ol>
+</li>
+</ul>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Class debugCls = <span class="built_in">NSClassFromString</span>(<span class="string">@"UIDebuggingInformationOverlay"</span>);</span><br><span class="line">[debugCls performSelector:<span class="built_in">NSSelectorFromString</span>(<span class="string">@"prepareDebuggingOverlay"</span>)];</span><br></pre></td></tr></table></figure>
+<ul>
+<li>2.在要显示调试窗口的地方调用：</li>
+</ul>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Class someClass = <span class="built_in">NSClassFromString</span>(<span class="string">@"UIDebuggingInformationOverlay"</span>);</span><br><span class="line"><span class="keyword">id</span> obj = [someClass performSelector:<span class="built_in">NSSelectorFromString</span>(<span class="string">@"overlay"</span>)];</span><br><span class="line">[obj performSelector:<span class="built_in">NSSelectorFromString</span>(<span class="string">@"toggleVisibility"</span>)];</span><br></pre></td></tr></table></figure>
+<ul>
+<li>3.在调试的界面，两手点击status地方即可</li>
+</ul>
+
+      
+    </div>
+    
   </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2015/11/23/iOS9新特性/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">iOS9新特性</div>
+      <strong class="article-nav-caption">></strong>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2015/11/23/hello-world/" class="archive-article-date">
-  	<time datetime="2015-11-23T12:39:59.000Z" itemprop="datePublished">Nov 23</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/11/23/hello-world/">Hello World</a>
-    </h1>
-  
 
-        <div class="article-info info-on-right">
-          
-          
 
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
+<div class="share">
+	<!-- JiaThis Button BEGIN -->
+	<div class="jiathis_style">
+		<span class="jiathis_txt">分享到：</span>
+		<a class="jiathis_button_tsina"></a>
+		<a class="jiathis_button_cqq"></a>
+		<a class="jiathis_button_douban"></a>
+		<a class="jiathis_button_weixin"></a>
+		<a class="jiathis_button_tumblr"></a>
+		<a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jtico jtico_jiathis" target="_blank"></a>
+	</div>
+	<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js?uid=1405949716054953" charset="utf-8"></script>
+	<!-- JiaThis Button END -->
+</div>
 
-    
+
+
+<div class="duoshuo">
+	<!-- 多说评论框 start -->
+	<div class="ds-thread" data-thread-key="UIDebuggingInformationOverlay调试工具" data-title="UIDebuggingInformationOverlay调试工具" data-url="http://yoursite.com/2017/07/20/UIDebuggingInformationOverlay调试工具/"></div>
+	<!-- 多说评论框 end -->
+	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+	<script type="text/javascript">
+	var duoshuoQuery = {short_name:"true"};
+	(function() {
+		var ds = document.createElement('script');
+		ds.type = 'text/javascript';ds.async = true;
+		ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+		ds.charset = 'UTF-8';
+		(document.getElementsByTagName('head')[0] 
+		 || document.getElementsByTagName('body')[0]).appendChild(ds);
+	})();
+	</script>
+	<!-- 多说公共JS代码 end -->
+</div>
+
+
+
 
 </div>
       <footer id="footer">
@@ -326,8 +361,8 @@
 		mathjax: true,
 		animate: true,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false
